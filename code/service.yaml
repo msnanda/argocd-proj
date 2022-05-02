@@ -9,6 +9,6 @@ spec:
   selector:
     app: flask-rest-hello-world
   ports:
-    - protocol: "TCP"s
+    - protocol: "TCP"
       port: 8000
       targetPort: 5000
