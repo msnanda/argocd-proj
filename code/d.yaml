@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: flask-rest-hello-world
-          image: argocd-proj:latest
+          image: flask-rest-hello-world:latest
           ports:
             - containerPort: 5000
