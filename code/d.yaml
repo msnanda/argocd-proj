@@ -10,7 +10,7 @@ spec:
   selector: 
     matchLabels:
       app: flask-rest-hello-world
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       name: flask-rest-hello-world-tmpl
@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: flask-rest-hello-world
-          image: flask-rest-hello-world:latest
+          image: msnanda5/flask_docker:tag1
           ports:
-            - containerPort: 5000
+            - containerPort: 5002
