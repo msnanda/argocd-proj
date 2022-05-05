@@ -1,0 +1,207 @@
+  100  cd ../../maninder
+  101  ls -l
+  102  cp d.yaml ../hello-python/app/.
+  103  cd ../hello-python/app
+  104  pwd
+  105  ls -l
+  106  kubectl apply -f d.yaml
+  107  kubectl get pods
+  108  pwd
+  109  ls -l
+  110  kubectl config use-context docker-for-desktop
+  111  docker context ls
+  112  kubectl config use-context docker-for-desktop
+  113  kubectl config use-context docker-for-desktop
+  114  kubectl config use-context docker-desktop
+  115  kubectl apply -f d.yaml
+  116  kubectl get pods
+  117  kubectl get pods
+  118  cat d.yaml
+  119  kubectl get pods
+  120  kubectl logs -f hello-python-6c7b478cf5-7q5mc
+  121  vim d.yaml
+  122  kubectl apply -f d.yaml
+  123  kubectl get pods
+  124  kubectl get pods
+  125  kubectl get pods
+  126  watch -n=5 kubectl get pods
+  127  brew install watch
+  128  watch -n=5 kubectl get pods
+  129  watch -n 5 kubectl get pods
+  130  kubectl get pods
+  131  kubectl logs -f hello-python-688cb4b954-5qdw4
+  132  kubectl logs -f hello-python-688cb4b954-5qdw4
+  133  vim d.yaml
+  134  kubectl apply -f d.yaml
+  135  watch -n 5 kubectl get pods
+  136  kubectl delete -f d.yaml
+  137  vim d.yaml
+  138  kubectl apply -f d.yaml
+  139  watch -n 5 kubectl get pods
+  140  kubectl get pods
+  141  kubectl get pods
+  142  kubectl get pods
+  143  watch -n 5 kubectl get pods
+  144  kubectl logs -f hello-python-6bb484d955-lgtms
+  145  ls
+  146  kubectl get pods
+  147  gcloud init
+  148  pwd
+  149  cd ..
+  150  cd ..
+  151  pwd
+  152  ls -l
+  153  cd downloads
+  154  ls -l
+  155  cd google-cloud-sdk
+  156  ls -l
+  157  ./install.sh
+  158  pwd
+  159  gcloud init
+  160  gcloud projects list --sort-by=projectId
+  161  gcloud container clusters create mavencode-cluster --num-nodes=1
+  162  gcloud container clusters create mavencode-cluster --num-nodes=1 --zone=us-central1-a --region=us-central1
+  163  gcloud container clusters create mavencode-cluster --num-nodes=1 --zone=us-central1-a
+  164  gcloud container clusters create mavencode-cluster-280 --num-nodes=1
+  165  gcloud container clusters create mavencode-cluster --num-nodes=1 --region=us-central1
+  166  gcloud components update
+  167  cd ..
+  168  gcloud components update
+  169  gcloud auth login
+  170  gcloud auth application-default login
+  171  gcloud services list
+  172  gcloud container clusters create mavencode-cluster --num-nodes=1 --region=us-central1
+  173  gcloud config set compute/region us-central1
+  174  gcloud container clusters create mavencode-cluster --num-nodes=1 --region=us-central1
+  175  gcloud config set compute/region us-central1
+  176  gcloud container clusters create mavencode-cluster --num-nodes=1 --region=us-central1
+  177  gcloud services enable container.googleapis.com
+  178  gcloud services enable container.googleapis.com
+  179  gcloud container clusters create mavencode-cluster --num-nodes=1 --region=us-central1
+  180  gcloud container clusters get-credentials mavencode-cluster
+  181  kubectl create namespace argocd
+  182  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+  183  brew install argocd
+  184  kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+  185  kubectl port-forward svc/argocd-server -n argocd 8080:443
+  186  \n
+  187  kubectl get all -n argocd
+  188  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+  189  argocd login localhost:8080
+  190  argocd login localhost:8080
+  191  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+  192  argocd login localhost:8080
+  193  kubectl config get-contexts -o name
+  194  argocd cluster add mavencode-cluster
+  195  kubectl config get-contexts -o name
+  196  argocd cluster add gke_dogwood-rigging-348716_us-central1_mavencode-cluster
+  197  argocd app create <application-name> \\n--repo https://github.com/<repo-address> \\n--revision <branch-name> \\n--path <path-to-kustomization-manifests> \\n--dest-server https://kubernetes.default.svc \\n--dest-namespace default
+  198  kubectl port-forward svc/argocd-server -n argocd 8080:443
+  199  pwd
+  200  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+  201  argocd login agrocd-server
+  202  FiT37HMK0XnDplvj
+  203  argocd login agrocd-server
+  204  argocd login agrocd
+  205  argocd login localhost:8080
+  206  argocd account update-password
+  207  kubectl config get-contexts -o name
+  208  argocd cluster add docker-desktop
+  209  kubectl config get-contexts -o name
+  210  kubectl config get-contexts -o name
+  211  pwd
+  212  ls -l
+  213  cd code
+  214  ls -l
+  215  cd templates
+  216  ls -l
+  217  vi index.html
+  218  cd ..
+  219  git add .
+  220  git commit 
+  221  git commit -m "updated again"
+  222  git push
+  223  ls -l
+  224  cd templates
+  225  ls -l
+  226  vi index.html
+  227  git add .
+  228  git push -u origin tag1
+  229  git push -u origin main
+  230  git push -u origin tag1
+  231  git pull origin tag1
+  232  git push origin tag1
+  233  git add .
+  234  git commint -m "html file updated"
+  235  git push origin tag1
+  236  git push
+  237  git push tag1
+  238  git push origin tag1
+  239  git push -f origin tag1
+  240  git push -u tag1
+  241  git fetch origin
+  242  git fetch branch
+  243  git fetch tag1
+  244  git branch tag2 main
+  245  git push -u origin tag2
+  246  ls -l
+  247  cd ..
+  248  pwd
+  249  ls -l
+  250  git add .
+  251  git commit -m "html file updated"
+  252  git push -u origin tag2
+  253  vi ./code/index.html
+  254  ls -l
+  255  vi ./templates/index.html
+  256  git add .
+  257  git push -u origin tag2
+  258  git commit -m "html file updated"
+  259  git config --global --edit
+  260  git commit --amend --reset-author
+  261  git push -u origin tag2
+  262  git push -u origin tag2
+  263  git push -u tag2
+  264  git push -u origin tag2
+  265  git add .
+  266  git commit -m "html file updated"
+  267  git push
+  268  git push tag2
+  269  git branch -c my_new_branch1
+  270  git branch
+  271  git checkout tag2
+  272  git branch
+  273  git add .
+  274  git commit -m "html file updated"
+  275  git push tag2
+  276  git push
+  277  git status
+  278  vi ./templates/index.html
+  279  git status
+  280  git add .
+  281  git commit -a
+  282  git push
+  283  git commit -m "index.html updated"
+  284  git push
+  285  docker build msnanda5/flask_docker .
+  286  docker build -t msnanda5/flask_docker .
+  287  docker push msnanda5/flask_docker
+  288  git branch
+  289  pwd
+  290  ls -l
+  291  cat d.yaml
+  292  cat service.yaml
+  293  vi d.yaml
+  294  git add .
+  295  git commit -m "yaml updated"
+  296  git push
+  297  docker tag msnanda5/flask_docker:tag2 .
+  298  docker tag2 msnanda5/flask_docker .
+  299  docker tag tag2 msnanda5/flask_docker .
+  300  docker tag msnanda5/flask_docker msnanda5/flask_docker:tag2
+  301  docker build -t msnanda5/flask_docker:tag2 .
+  302  docker push msnanda5/flask_docker:tag2
+  303  cat d.yaml
+  304  history
+  305  history 100
+  306  historu 100 > tempfile.txt
