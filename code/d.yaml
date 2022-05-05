@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: flask-rest-hello-world
-          image: msnanda5/flask_docker:tag1
+          image: msnanda5/flask_docker:tag2
           ports:
             - containerPort: 5002
